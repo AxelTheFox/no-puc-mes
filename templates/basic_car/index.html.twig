@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ operation_name }}{% endblock %}
+{% block body %}
+    <h1> {{ operation_name }}</h1>
+    
+    <p> {{ car.id }}</p>
+    
+    {% if car.color %}
+        <p> {{ car.color }}</p>
+    {% endif %}
+
+    {% if car.kms %}
+        <p> {{ car.kms }}</p>
+    {% endif %}
+    
+{% endblock %}
